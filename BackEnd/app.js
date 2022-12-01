@@ -13,12 +13,12 @@ app.use(bodyParser.json());
 app.use(cors({
   origin: "*",
 }))
-// MySql
+// MySql all connection data is modified for security
 const connection = mysql.createConnection({
-  host: 'balo.mysql.database.azure.com',
-  user: 'osvaldo',
-  password: 'Wormulon_2011',
-  database: 'balo',
+  host: 'host.mysql.database.azure.com',
+  user: 'user',
+  password: 'Password',
+  database: 'database',
   ssl: true
 });
 
